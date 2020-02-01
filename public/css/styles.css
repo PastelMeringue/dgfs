@@ -4,7 +4,8 @@ html, body {
   font-size: 15px;
   font-family: "Montserrat", "Helvetica", "sans-serif";
   color: #5680E9;
-  background: #ddd; }
+  background: #ddd;
+  text-align: center; }
 
 .title-wrapper {
   display: grid;
