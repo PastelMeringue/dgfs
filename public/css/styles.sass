@@ -1,0 +1,88 @@
+$bg-color: #ddd
+$title-wrapper-bg-color: #333
+$header-bg-color: #555
+
+$border-color: #000
+
+$title-text-color: #5680E9
+$subsection-text-color: #444
+$subtitle-color: #555
+$text-color: #333
+
+$section-div-color: #aaa
+
+html, body
+  padding: 0
+  margin: 0
+  font-size: 15px
+  font-family: "Montserrat", "Helvetica", "sans-serif"
+  color: $title-text-color
+  background: $bg-color
+
+// NAVBAR //
+
+
+// TITLE //
+.title-wrapper
+  display: grid
+  width: 85%
+  padding: 5rem 3rem
+  border-top: solid 2px $border-color
+  border-bottom: solid 2px $border-color
+  text-align: center
+  vertical-align: middle
+  margin: auto
+  .titles
+    align-self: center
+h1
+  font-size: 3rem
+  font-weight: bold
+h2
+  font-size: 1.2rem
+  font-style: italic
+  color: $subtitle-color
+
+// SECTION //
+.section
+  display: grid
+.header
+  padding: 40px 0 0px
+.number-wrapper
+  display: inline-block
+h3
+  font-size: 1.8rem
+  font-weight: bold
+h4
+  font-size: 1rem
+  font-style: italic
+  color: $subtitle-color
+.p-header
+  font-size: 1.2rem
+  font-weight: bold
+  color: $subsection-text-color
+  margin: 20px 0 5px 0
+.section-div
+  width: 50%
+  margin: 50px 0 20px 0
+  border-bottom: 1px solid $section-div-color
+  justify-self: center
+
+// LISTS //
+p, li
+  color: $text-color
+ul
+  padding-left: 20px
+  list-style-type: none
+  margin-left: 0
+  padding-left: 0
+.bp
+  display: inline-block
+  position: relative
+  bottom: 1px
+  width: 8px
+  height: 8px
+  background: $text-color
+  border-radius: 100%
+  margin-right: 10px
+.strong
+  font-weight: bold
