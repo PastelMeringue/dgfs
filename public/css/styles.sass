@@ -46,12 +46,37 @@ h2
   color: $subtitle-color
 
 // SECTION //
+// HEADER
 .section
   display: grid
 .header
+  display: grid
   padding: 40px 0 0px
-.number-wrapper
-  display: inline-block
+.img
+  filter: opacity(70%)
+  height: 300px
+  width: 100%
+  @media screen and (min-width: 991px)
+    height: 0
+    width: 0
+#img-1
+  background: url("/img/p1.png") center center no-repeat
+#img-2
+  background: url("/img/p2.png") center center no-repeat
+#img-3
+  background: url("/img/p3.png") center center no-repeat
+#img-4
+  background: url("/img/p4.png") center center no-repeat
+#img-5
+  background: url("/img/p5.png") center center no-repeat
+#img-6
+  background: url("/img/p6.png") center center no-repeat
+
+#img-1, #img-2, #img-3, #img-4, #img-5, #img-6
+  background-size: contain
+  @media screen and (min-width: 991px)
+    background: none
+
 h3
   font-size: 1.8rem
   font-weight: bold
@@ -59,6 +84,7 @@ h4
   font-size: 1rem
   font-style: italic
   color: $subtitle-color
+// TEXT BODY
 .p-header
   font-size: 1.2rem
   font-weight: bold
@@ -94,6 +120,7 @@ ul
 .italic
   font-style: italic
 
+// LINKS
 a, a:hover, a:visited, a:link, a:active
   text-decoration: none
 a
